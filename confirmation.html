@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pre-order your time machine!</title>
+  <link rel="stylesheet" href="css/confirmation.css">
+
+  <script>
+    window.onload = function() {
+      let min = 100;
+      let max = 10000;
+      let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+      document.getElementById("tmId").innerHTML = "TM" + randomNumber;
+
+
+      var machineType = localStorage.getItem("machineType");
+      var firstName = localStorage.getItem("firstName");
+      var lastName = localStorage.getItem("lastName");
+      var email = localStorage.getItem("email");
+
+      document.getElementById("name").innerHTML = firstName;
+
+// Display form data in the table
+      document.getElementById("machineType").innerHTML = machineType;
+      document.getElementById("firstName").innerHTML = firstName;
+      document.getElementById("lastName").innerHTML = lastName;
+      document.getElementById("email").innerHTML = email;
+
+
+    };
+  </script>
+</head>
+<body>
+
+  <div class="div1">
+    <h1>Thank you <span id="name"></span>!</h1>
+  </div>
+
+  <div class="div1">
+    <p>Your time machine should arrive in the second quarter of 2023. We will notify you once it's shipped!</p>
+  </div>
+
+  <div class="div2">
+    <p>Here is the summary of your pre-order:</p>
+  </div>
+
+  <div class="div2">
+      <p>Your pre-order number is: <span id="tmId"></span></p>
+  </div>
+
+
+     <table>
+        <tr>
+          <th>Machine Type</th>
+          <td id="machineType"></td>
+        </tr>
+        <tr>
+          <th>First Name</th>
+          <td id="firstName"></td>
+        </tr>
+        <tr>
+          <th>Last Name</th>
+          <td id="lastName"></td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td id="email"></td>
+        </tr>
+     </table>
+
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </div>
+</body>
+</html>

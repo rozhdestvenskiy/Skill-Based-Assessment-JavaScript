@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pre-order your time machine!</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/pre-order-form.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+
+<div class="div1">
+  <h1>Alright, stranger, now please select the right time machine for your needs! </h1>
+</div>
+
+<div class="div2">
+  <p>We offer the nicest time machines in the whole galaxy:</p>
+</div>
+
+<div class="flex-container">
+  <div>
+    <a href="#">
+      <img id="personal_machine_pic" src="img/persona-time-machine-300.png" alt="personal-machine-picture">
+    </a>
+    <p>Personal time machine</p>
+    <p class="description">Solo time travelling once a month.</p>
+  </div>
+  <div>
+    <a href="#">
+      <img id="advanced_machine_pic" src="img/advanced-time-machine-clear-300.png" alt="advanced-machine-picture">
+    </a>
+    <p>Advanced Time machine</p>
+    <p class="description">Group time travelling once a month.</p>
+  </div>
+    <div>
+    <a href="#">
+      <img id="ultimate_machine_pic" src="img/ultimate-time-machine-300.png" alt="ultimate-machine-picture">
+    </a>
+    <p>Ultimate time machine</p>
+    <p class="description">Unlimited travels! Unlimited travellers!</p>
+    </div>
+</div>
+
+<br>
+<div class="div2">
+  <p>Please select the time machine and fill the quick form:</p>
+</div>
+
+<div class="div2">
+    <form id="form">
+      <div class="form-element">
+      <label for="machineType">Machine Type:</label>
+      <select id="machineType" name="machineType" required>
+        <option value="" selected disabled>Select a Time Machine</option>
+        <option value="Personal Time Machine">Personal Time Machine</option>
+        <option value="Advanced Time Machine">Advanced Time Machine</option>
+        <option value="Ultimate Time Machine">Ultimate Time Machine</option>
+      </select>
+      </div>
+<!--      <br><br>-->
+      <div class="form-element">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+      </div>
+<!--      <br><br>-->
+      <div class="form-element">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+<!--      <br><br>-->
+      </div>
+      <div class="form-element">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required>
+<!--      <br><br>-->
+      </div>
+      <button id="submit">Submit</button>
+  </form>
+</div>
+
+<!--<div>-->
+<!--  <p id="selected-machine"></p>-->
+<!--</div>-->
+
+<!--<div id="formContainer">-->
+<!--&lt;!&ndash;  form will be inserted here using js &ndash;&gt;-->
+<!--</div>-->
+
+
+<!--<div class="div4">-->
+<!--  <button id="submit" type="button">Submit!</button>-->
+<!--</div>-->
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</html>
